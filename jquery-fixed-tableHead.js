@@ -6,7 +6,7 @@
 $.fn.fixedTableHeader = function () {
     var table = $(this);
     var tClass = table.attr('class'),
-        tWidth = table.width()+;
+        tWidth = table.width();
     var tableOffset = table.offset().top;
     var fixedTable = $('<table id="fixedTable"></table>').css({ 'display':'none', 'position':'fixed', 'top':'0px','width':tWidth});
     fixedTable.attr('class',tClass);
